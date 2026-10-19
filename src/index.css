@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+/* Identidade do Pocards: papel creme, tinta escura e a linha vermelha das fichas pautadas. */
+@theme {
+  --color-paper: #f6f1e7;
+  --color-card: #fffdf8;
+  --color-ink: #1f2430;
+  --color-muted: #5f6370;
+  --color-line: #e4dccb;
+  --color-accent: #d6453d;
+  --color-accent-ink: #b3362f; /* versão mais escura do vermelho, legível em texto */
+  --color-rule: #b9cde6;
+
+  /* Cores dos botões de avaliação (contraste ≥ 4,5:1 com texto branco) */
+  --color-again: #c8423a;
+  --color-hard: #94600c;
+  --color-good: #2f7a50;
+  --color-easy: #3866a8;
+
+  --font-display: ui-serif, Georgia, "Times New Roman", serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+html,
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Classes de componente ficam na camada "components" para que utilitários
+   do Tailwind (ex.: px-1, gap-0) possam sobrescrevê-las. */
+@layer components {
+/* Ficha pautada: linha vermelha no topo e pauta azul clara. */
+.index-card {
+  background-color: var(--color-card);
+  background-image:
+    linear-gradient(to bottom, transparent 52px, var(--color-accent) 52px, var(--color-accent) 54px, transparent 54px),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 31px,
+      color-mix(in srgb, var(--color-rule) 60%, transparent) 31px,
+      color-mix(in srgb, var(--color-rule) 60%, transparent) 32px
+    );
+  background-position: 0 0, 0 54px;
+  background-repeat: no-repeat, repeat;
+  border: 1px solid var(--color-line);
+  box-shadow: 0 1px 0 var(--color-line), 0 8px 24px -12px rgb(31 36 48 / 0.25);
+}
+
+.field {
+  width: 100%;
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
+  border-radius: 0.75rem;
+  padding: 0.65rem 0.85rem;
+  outline: none;
+}
+
+.field:focus {
+  border-color: var(--color-ink);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border-radius: 0.75rem;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  transition: transform 80ms ease, opacity 120ms ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+}
+
+.btn-primary {
+  background: var(--color-ink);
+  color: var(--color-card);
+}
+
+.btn-ghost {
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
+  color: var(--color-ink);
+}
+}
