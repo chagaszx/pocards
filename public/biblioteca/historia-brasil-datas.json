@@ -1,0 +1,117 @@
+{
+  "id": "historia-brasil-datas",
+  "name": "História do Brasil — datas",
+  "category": "História",
+  "description": "Os marcos da história do Brasil que mais caem no ENEM e nos vestibulares.",
+  "cards": [
+    [
+      "Chegada da esquadra de Pedro Álvares Cabral",
+      "1500"
+    ],
+    [
+      "Criação das capitanias hereditárias",
+      "1534"
+    ],
+    [
+      "Fundação de Salvador, primeira capital",
+      "1549"
+    ],
+    [
+      "Início da ocupação holandesa em Pernambuco",
+      "1630"
+    ],
+    [
+      "Inconfidência Mineira",
+      "1789\n(Tiradentes foi executado em 1792)"
+    ],
+    [
+      "Chegada da família real portuguesa ao Brasil",
+      "1808"
+    ],
+    [
+      "Independência do Brasil",
+      "1822"
+    ],
+    [
+      "Primeira Constituição do Brasil (Império)",
+      "1824"
+    ],
+    [
+      "Abdicação de D. Pedro I",
+      "1831"
+    ],
+    [
+      "Início da Guerra do Paraguai",
+      "1864\n(terminou em 1870)"
+    ],
+    [
+      "Lei do Ventre Livre",
+      "1871"
+    ],
+    [
+      "Lei Áurea (abolição da escravidão)",
+      "1888"
+    ],
+    [
+      "Proclamação da República",
+      "1889"
+    ],
+    [
+      "Revolta da Vacina",
+      "1904"
+    ],
+    [
+      "Semana de Arte Moderna",
+      "1922"
+    ],
+    [
+      "Revolução de 1930 (Getúlio Vargas chega ao poder)",
+      "1930"
+    ],
+    [
+      "Revolução Constitucionalista de São Paulo",
+      "1932"
+    ],
+    [
+      "Início do Estado Novo",
+      "1937"
+    ],
+    [
+      "Criação da CLT (Consolidação das Leis do Trabalho)",
+      "1943"
+    ],
+    [
+      "Inauguração de Brasília",
+      "1960"
+    ],
+    [
+      "Golpe militar",
+      "1964"
+    ],
+    [
+      "AI-5 (Ato Institucional nº 5)",
+      "1968"
+    ],
+    [
+      "Lei da Anistia",
+      "1979"
+    ],
+    [
+      "Diretas Já",
+      "1984"
+    ],
+    [
+      "Fim da ditadura militar (posse de José Sarney)",
+      "1985"
+    ],
+    [
+      "Constituição Cidadã (atual Constituição)",
+      "1988"
+    ],
+    [
+      "Plano Real",
+      "1994"
+    ]
+  ],
+  "cover": "/biblioteca/img/bandeiras/br.svg"
+}

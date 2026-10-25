@@ -1,0 +1,277 @@
+{
+  "id": "ingles-verbos-irregulares",
+  "name": "Inglês — verbos irregulares",
+  "category": "Idiomas",
+  "description": "Os verbos irregulares mais usados, com passado, particípio e tradução.",
+  "cards": [
+    [
+      "to be",
+      "was / were · been\nser, estar"
+    ],
+    [
+      "to become",
+      "became · become\ntornar-se"
+    ],
+    [
+      "to begin",
+      "began · begun\ncomeçar"
+    ],
+    [
+      "to break",
+      "broke · broken\nquebrar"
+    ],
+    [
+      "to bring",
+      "brought · brought\ntrazer"
+    ],
+    [
+      "to build",
+      "built · built\nconstruir"
+    ],
+    [
+      "to buy",
+      "bought · bought\ncomprar"
+    ],
+    [
+      "to catch",
+      "caught · caught\npegar, apanhar"
+    ],
+    [
+      "to choose",
+      "chose · chosen\nescolher"
+    ],
+    [
+      "to come",
+      "came · come\nvir"
+    ],
+    [
+      "to cost",
+      "cost · cost\ncustar"
+    ],
+    [
+      "to cut",
+      "cut · cut\ncortar"
+    ],
+    [
+      "to do",
+      "did · done\nfazer"
+    ],
+    [
+      "to draw",
+      "drew · drawn\ndesenhar"
+    ],
+    [
+      "to drink",
+      "drank · drunk\nbeber"
+    ],
+    [
+      "to drive",
+      "drove · driven\ndirigir"
+    ],
+    [
+      "to eat",
+      "ate · eaten\ncomer"
+    ],
+    [
+      "to fall",
+      "fell · fallen\ncair"
+    ],
+    [
+      "to feel",
+      "felt · felt\nsentir"
+    ],
+    [
+      "to fight",
+      "fought · fought\nlutar, brigar"
+    ],
+    [
+      "to find",
+      "found · found\nencontrar, achar"
+    ],
+    [
+      "to fly",
+      "flew · flown\nvoar"
+    ],
+    [
+      "to forget",
+      "forgot · forgotten\nesquecer"
+    ],
+    [
+      "to get",
+      "got · gotten (EUA) / got (Reino Unido)\nconseguir, obter, ficar"
+    ],
+    [
+      "to give",
+      "gave · given\ndar"
+    ],
+    [
+      "to go",
+      "went · gone\nir"
+    ],
+    [
+      "to grow",
+      "grew · grown\ncrescer"
+    ],
+    [
+      "to have",
+      "had · had\nter"
+    ],
+    [
+      "to hear",
+      "heard · heard\nouvir"
+    ],
+    [
+      "to hide",
+      "hid · hidden\nesconder"
+    ],
+    [
+      "to hold",
+      "held · held\nsegurar"
+    ],
+    [
+      "to keep",
+      "kept · kept\nmanter, guardar"
+    ],
+    [
+      "to know",
+      "knew · known\nsaber, conhecer"
+    ],
+    [
+      "to leave",
+      "left · left\nsair, partir, deixar"
+    ],
+    [
+      "to lend",
+      "lent · lent\nemprestar (para alguém)"
+    ],
+    [
+      "to let",
+      "let · let\ndeixar, permitir"
+    ],
+    [
+      "to lose",
+      "lost · lost\nperder"
+    ],
+    [
+      "to make",
+      "made · made\nfazer, fabricar"
+    ],
+    [
+      "to mean",
+      "meant · meant\nsignificar, querer dizer"
+    ],
+    [
+      "to meet",
+      "met · met\nencontrar, conhecer (alguém)"
+    ],
+    [
+      "to pay",
+      "paid · paid\npagar"
+    ],
+    [
+      "to put",
+      "put · put\ncolocar, pôr"
+    ],
+    [
+      "to read",
+      "read · read (pronúncia: \"réd\")\nler"
+    ],
+    [
+      "to ride",
+      "rode · ridden\nandar (de bicicleta, a cavalo)"
+    ],
+    [
+      "to run",
+      "ran · run\ncorrer"
+    ],
+    [
+      "to say",
+      "said · said\ndizer"
+    ],
+    [
+      "to see",
+      "saw · seen\nver"
+    ],
+    [
+      "to sell",
+      "sold · sold\nvender"
+    ],
+    [
+      "to send",
+      "sent · sent\nenviar, mandar"
+    ],
+    [
+      "to sing",
+      "sang · sung\ncantar"
+    ],
+    [
+      "to sit",
+      "sat · sat\nsentar"
+    ],
+    [
+      "to sleep",
+      "slept · slept\ndormir"
+    ],
+    [
+      "to speak",
+      "spoke · spoken\nfalar"
+    ],
+    [
+      "to spend",
+      "spent · spent\ngastar; passar (tempo)"
+    ],
+    [
+      "to stand",
+      "stood · stood\nficar de pé"
+    ],
+    [
+      "to steal",
+      "stole · stolen\nroubar"
+    ],
+    [
+      "to swim",
+      "swam · swum\nnadar"
+    ],
+    [
+      "to take",
+      "took · taken\npegar, levar, tomar"
+    ],
+    [
+      "to teach",
+      "taught · taught\nensinar"
+    ],
+    [
+      "to tell",
+      "told · told\ncontar, dizer"
+    ],
+    [
+      "to think",
+      "thought · thought\npensar, achar"
+    ],
+    [
+      "to throw",
+      "threw · thrown\njogar, arremessar"
+    ],
+    [
+      "to understand",
+      "understood · understood\nentender"
+    ],
+    [
+      "to wake",
+      "woke · woken\nacordar"
+    ],
+    [
+      "to wear",
+      "wore · worn\nvestir, usar (roupa)"
+    ],
+    [
+      "to win",
+      "won · won\nvencer, ganhar"
+    ],
+    [
+      "to write",
+      "wrote · written\nescrever"
+    ]
+  ],
+  "cover": "/biblioteca/img/bandeiras/us.svg"
+}

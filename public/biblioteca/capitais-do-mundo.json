@@ -1,0 +1,229 @@
+{
+  "id": "capitais-do-mundo",
+  "name": "Capitais do mundo",
+  "category": "Geografia",
+  "description": "Capitais e bandeiras de países das Américas, Europa, África, Ásia e Oceania.",
+  "cards": [
+    [
+      "Argentina\n![Bandeira: Argentina](/biblioteca/img/bandeiras/ar.svg)",
+      "Buenos Aires"
+    ],
+    [
+      "Bolívia\n![Bandeira: Bolívia](/biblioteca/img/bandeiras/bo.webp)",
+      "Sucre (capital constitucional) e La Paz (sede do governo)"
+    ],
+    [
+      "Chile\n![Bandeira: Chile](/biblioteca/img/bandeiras/cl.svg)",
+      "Santiago"
+    ],
+    [
+      "Colômbia\n![Bandeira: Colômbia](/biblioteca/img/bandeiras/co.svg)",
+      "Bogotá"
+    ],
+    [
+      "Equador\n![Bandeira: Equador](/biblioteca/img/bandeiras/ec.webp)",
+      "Quito"
+    ],
+    [
+      "Paraguai\n![Bandeira: Paraguai](/biblioteca/img/bandeiras/py.webp)",
+      "Assunção"
+    ],
+    [
+      "Peru\n![Bandeira: Peru](/biblioteca/img/bandeiras/pe.svg)",
+      "Lima"
+    ],
+    [
+      "Uruguai\n![Bandeira: Uruguai](/biblioteca/img/bandeiras/uy.svg)",
+      "Montevidéu"
+    ],
+    [
+      "Venezuela\n![Bandeira: Venezuela](/biblioteca/img/bandeiras/ve.svg)",
+      "Caracas"
+    ],
+    [
+      "México\n![Bandeira: México](/biblioteca/img/bandeiras/mx.webp)",
+      "Cidade do México"
+    ],
+    [
+      "Estados Unidos\n![Bandeira: Estados Unidos](/biblioteca/img/bandeiras/us.svg)",
+      "Washington, D.C."
+    ],
+    [
+      "Canadá\n![Bandeira: Canadá](/biblioteca/img/bandeiras/ca.svg)",
+      "Ottawa"
+    ],
+    [
+      "Cuba\n![Bandeira: Cuba](/biblioteca/img/bandeiras/cu.svg)",
+      "Havana"
+    ],
+    [
+      "Portugal\n![Bandeira: Portugal](/biblioteca/img/bandeiras/pt.svg)",
+      "Lisboa"
+    ],
+    [
+      "Espanha\n![Bandeira: Espanha](/biblioteca/img/bandeiras/es.webp)",
+      "Madri"
+    ],
+    [
+      "França\n![Bandeira: França](/biblioteca/img/bandeiras/fr.svg)",
+      "Paris"
+    ],
+    [
+      "Itália\n![Bandeira: Itália](/biblioteca/img/bandeiras/it.svg)",
+      "Roma"
+    ],
+    [
+      "Alemanha\n![Bandeira: Alemanha](/biblioteca/img/bandeiras/de.svg)",
+      "Berlim"
+    ],
+    [
+      "Reino Unido\n![Bandeira: Reino Unido](/biblioteca/img/bandeiras/gb.svg)",
+      "Londres"
+    ],
+    [
+      "Irlanda\n![Bandeira: Irlanda](/biblioteca/img/bandeiras/ie.svg)",
+      "Dublin"
+    ],
+    [
+      "Países Baixos (Holanda)\n![Bandeira: Países Baixos (Holanda)](/biblioteca/img/bandeiras/nl.svg)",
+      "Amsterdã"
+    ],
+    [
+      "Bélgica\n![Bandeira: Bélgica](/biblioteca/img/bandeiras/be.svg)",
+      "Bruxelas"
+    ],
+    [
+      "Suíça\n![Bandeira: Suíça](/biblioteca/img/bandeiras/ch.svg)",
+      "Berna"
+    ],
+    [
+      "Áustria\n![Bandeira: Áustria](/biblioteca/img/bandeiras/at.svg)",
+      "Viena"
+    ],
+    [
+      "Polônia\n![Bandeira: Polônia](/biblioteca/img/bandeiras/pl.svg)",
+      "Varsóvia"
+    ],
+    [
+      "Grécia\n![Bandeira: Grécia](/biblioteca/img/bandeiras/gr.svg)",
+      "Atenas"
+    ],
+    [
+      "Suécia\n![Bandeira: Suécia](/biblioteca/img/bandeiras/se.svg)",
+      "Estocolmo"
+    ],
+    [
+      "Noruega\n![Bandeira: Noruega](/biblioteca/img/bandeiras/no.svg)",
+      "Oslo"
+    ],
+    [
+      "Dinamarca\n![Bandeira: Dinamarca](/biblioteca/img/bandeiras/dk.svg)",
+      "Copenhague"
+    ],
+    [
+      "Finlândia\n![Bandeira: Finlândia](/biblioteca/img/bandeiras/fi.svg)",
+      "Helsinque"
+    ],
+    [
+      "Rússia\n![Bandeira: Rússia](/biblioteca/img/bandeiras/ru.svg)",
+      "Moscou"
+    ],
+    [
+      "Ucrânia\n![Bandeira: Ucrânia](/biblioteca/img/bandeiras/ua.svg)",
+      "Kiev"
+    ],
+    [
+      "Turquia\n![Bandeira: Turquia](/biblioteca/img/bandeiras/tr.svg)",
+      "Ancara"
+    ],
+    [
+      "Egito\n![Bandeira: Egito](/biblioteca/img/bandeiras/eg.svg)",
+      "Cairo"
+    ],
+    [
+      "Marrocos\n![Bandeira: Marrocos](/biblioteca/img/bandeiras/ma.svg)",
+      "Rabat"
+    ],
+    [
+      "Nigéria\n![Bandeira: Nigéria](/biblioteca/img/bandeiras/ng.svg)",
+      "Abuja"
+    ],
+    [
+      "África do Sul\n![Bandeira: África do Sul](/biblioteca/img/bandeiras/za.svg)",
+      "Pretória (executiva), Cidade do Cabo (legislativa) e Bloemfontein (judiciária)"
+    ],
+    [
+      "Angola\n![Bandeira: Angola](/biblioteca/img/bandeiras/ao.svg)",
+      "Luanda"
+    ],
+    [
+      "Moçambique\n![Bandeira: Moçambique](/biblioteca/img/bandeiras/mz.svg)",
+      "Maputo"
+    ],
+    [
+      "Quênia\n![Bandeira: Quênia](/biblioteca/img/bandeiras/ke.svg)",
+      "Nairóbi"
+    ],
+    [
+      "Etiópia\n![Bandeira: Etiópia](/biblioteca/img/bandeiras/et.svg)",
+      "Adis Abeba"
+    ],
+    [
+      "Arábia Saudita\n![Bandeira: Arábia Saudita](/biblioteca/img/bandeiras/sa.svg)",
+      "Riad"
+    ],
+    [
+      "Irã\n![Bandeira: Irã](/biblioteca/img/bandeiras/ir.webp)",
+      "Teerã"
+    ],
+    [
+      "Iraque\n![Bandeira: Iraque](/biblioteca/img/bandeiras/iq.svg)",
+      "Bagdá"
+    ],
+    [
+      "Índia\n![Bandeira: Índia](/biblioteca/img/bandeiras/in.svg)",
+      "Nova Délhi"
+    ],
+    [
+      "Paquistão\n![Bandeira: Paquistão](/biblioteca/img/bandeiras/pk.svg)",
+      "Islamabad"
+    ],
+    [
+      "Cazaquistão\n![Bandeira: Cazaquistão](/biblioteca/img/bandeiras/kz.svg)",
+      "Astana"
+    ],
+    [
+      "China\n![Bandeira: China](/biblioteca/img/bandeiras/cn.svg)",
+      "Pequim"
+    ],
+    [
+      "Japão\n![Bandeira: Japão](/biblioteca/img/bandeiras/jp.svg)",
+      "Tóquio"
+    ],
+    [
+      "Coreia do Sul\n![Bandeira: Coreia do Sul](/biblioteca/img/bandeiras/kr.svg)",
+      "Seul"
+    ],
+    [
+      "Tailândia\n![Bandeira: Tailândia](/biblioteca/img/bandeiras/th.svg)",
+      "Bangkok"
+    ],
+    [
+      "Vietnã\n![Bandeira: Vietnã](/biblioteca/img/bandeiras/vn.svg)",
+      "Hanói"
+    ],
+    [
+      "Filipinas\n![Bandeira: Filipinas](/biblioteca/img/bandeiras/ph.svg)",
+      "Manila"
+    ],
+    [
+      "Austrália\n![Bandeira: Austrália](/biblioteca/img/bandeiras/au.svg)",
+      "Camberra"
+    ],
+    [
+      "Nova Zelândia\n![Bandeira: Nova Zelândia](/biblioteca/img/bandeiras/nz.svg)",
+      "Wellington"
+    ]
+  ],
+  "cover": "/biblioteca/img/bandeiras/un.webp"
+}

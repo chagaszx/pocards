@@ -1,0 +1,169 @@
+{
+  "id": "tabela-periodica",
+  "name": "Tabela periódica — símbolos",
+  "category": "Ciências",
+  "description": "Os elementos mais cobrados: do quadrinho da tabela periódica para o nome e a foto do material.",
+  "cards": [
+    [
+      "![H](/biblioteca/img/elementos/h.svg)",
+      "Hidrogênio · número atômico 1\n![Foto: hidrogênio](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Hydrogenglow.jpg/330px-Hydrogenglow.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![He](/biblioteca/img/elementos/he.svg)",
+      "Hélio · número atômico 2\n![Foto: hélio](https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Helium-glow.jpg/330px-Helium-glow.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![Li](/biblioteca/img/elementos/li.svg)",
+      "Lítio · número atômico 3\n![Foto: lítio](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/0.5_grams_lithium_under_argon.jpg/330px-0.5_grams_lithium_under_argon.jpg)\n\n*Foto: Hi-Res Images of Chemical Elements · CC BY 3.0*"
+    ],
+    [
+      "![Be](/biblioteca/img/elementos/be.svg)",
+      "Berílio · número atômico 4\n![Foto: berílio](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Beryllium_%28Be%29.jpg/330px-Beryllium_%28Be%29.jpg)\n\n*Foto: Hi-Res Images of Chemical Elements · CC BY 3.0*"
+    ],
+    [
+      "![B](/biblioteca/img/elementos/b.svg)",
+      "Boro · número atômico 5\n![Foto: boro](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Boron.jpg/330px-Boron.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![C](/biblioteca/img/elementos/c.svg)",
+      "Carbono · número atômico 6\n![Foto: carbono](https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pure_Carbon.png/330px-Pure_Carbon.png)\n\n*Foto: Texas Lane · CC BY-SA 4.0*"
+    ],
+    [
+      "![N](/biblioteca/img/elementos/n.svg)",
+      "Nitrogênio · número atômico 7\n![Foto: nitrogênio](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Nitrogen-glow.jpg/330px-Nitrogen-glow.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![O](/biblioteca/img/elementos/o.svg)",
+      "Oxigênio · número atômico 8\n![Foto: oxigênio](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Liquid_oxygen_in_a_beaker_%28cropped_and_retouched%29.jpg/330px-Liquid_oxygen_in_a_beaker_%28cropped_and_retouched%29.jpg)\n\n*Foto: Staff Sgt. Nika Glover · domínio público*"
+    ],
+    [
+      "![F](/biblioteca/img/elementos/f.svg)",
+      "Flúor · número atômico 9\n![Foto: flúor](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Fluoro_liquido_a_-196%C2%B0C_1.jpg/330px-Fluoro_liquido_a_-196%C2%B0C_1.jpg)\n\n*Foto: Fulvio314 · CC BY-SA 3.0*"
+    ],
+    [
+      "![Ne](/biblioteca/img/elementos/ne.svg)",
+      "Neônio · número atômico 10\n![Foto: neônio](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Neon-glow.jpg/330px-Neon-glow.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![Na](/biblioteca/img/elementos/na.svg)",
+      "Sódio · número atômico 11\n![Foto: sódio](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Na_%28Sodium%29.jpg/330px-Na_%28Sodium%29.jpg)\n\n*Foto: Dnn87 · CC BY-SA 3.0*"
+    ],
+    [
+      "![Mg](/biblioteca/img/elementos/mg.svg)",
+      "Magnésio · número atômico 12\n![Foto: magnésio](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Magnesium_crystals.jpg/330px-Magnesium_crystals.jpg)\n\n*Foto: Warut Roonguthai · CC BY-SA 3.0*"
+    ],
+    [
+      "![Al](/biblioteca/img/elementos/al.svg)",
+      "Alumínio · número atômico 13\n![Foto: alumínio](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Aluminium.jpg/330px-Aluminium.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![Si](/biblioteca/img/elementos/si.svg)",
+      "Silício · número atômico 14\n![Foto: silício](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Silicon.jpg/330px-Silicon.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![P](/biblioteca/img/elementos/p.svg)",
+      "Fósforo · número atômico 15\n![Foto: fósforo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Phosphorus-purple.jpg/330px-Phosphorus-purple.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![S](/biblioteca/img/elementos/s.svg)",
+      "Enxofre · número atômico 16\n![Foto: enxofre](https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Native_sulfur_%28Vodinskoe_Deposit%3B_quarry_near_Samara%2C_Russia%29_9.jpg/330px-Native_sulfur_%28Vodinskoe_Deposit%3B_quarry_near_Samara%2C_Russia%29_9.jpg)\n\n*Foto: James St. John · CC BY 2.0*"
+    ],
+    [
+      "![Cl](/biblioteca/img/elementos/cl.svg)",
+      "Cloro · número atômico 17\n![Foto: cloro](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Chlorine-sample-flip.jpg/330px-Chlorine-sample-flip.jpg)\n\n*Foto: Benjah-bmm27 · domínio público*"
+    ],
+    [
+      "![Ar](/biblioteca/img/elementos/ar.svg)",
+      "Argônio · número atômico 18\n![Foto: argônio](https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Argon-glow.jpg/330px-Argon-glow.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![K](/biblioteca/img/elementos/k.svg)",
+      "Potássio · número atômico 19\n![Foto: potássio](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Potassium.JPG/330px-Potassium.JPG)\n\n*Foto: Dnn87 · CC BY 3.0*"
+    ],
+    [
+      "![Ca](/biblioteca/img/elementos/ca.svg)",
+      "Cálcio · número atômico 20\n![Foto: cálcio](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Calcium.jpg/330px-Calcium.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![Ti](/biblioteca/img/elementos/ti.svg)",
+      "Titânio · número atômico 22\n![Foto: titânio](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Titanium.jpg/330px-Titanium.jpg)\n\n*Foto: Hi-Res Images of Chemical Elements · CC BY 3.0*"
+    ],
+    [
+      "![Cr](/biblioteca/img/elementos/cr.svg)",
+      "Cromo · número atômico 24\n![Foto: cromo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Chromium.jpg/330px-Chromium.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![Mn](/biblioteca/img/elementos/mn.svg)",
+      "Manganês · número atômico 25\n![Foto: manganês](https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Manganese_element.jpg/330px-Manganese_element.jpg)\n\n*Foto: W. Oelen · CC BY-SA 3.0*"
+    ],
+    [
+      "![Fe](/biblioteca/img/elementos/fe.svg)",
+      "Ferro · número atômico 26\n![Foto: ferro](https://images-of-elements.com/iron-2.jpg)\n\n*Foto: Images of Elements · CC BY 3.0*"
+    ],
+    [
+      "![Co](/biblioteca/img/elementos/co.svg)",
+      "Cobalto · número atômico 27\n![Foto: cobalto](https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Cobalt_ore_2.jpg/330px-Cobalt_ore_2.jpg)\n\n*Foto: Hi-Res Images of Chemical Elements · CC BY 3.0*"
+    ],
+    [
+      "![Ni](/biblioteca/img/elementos/ni.svg)",
+      "Níquel · número atômico 28\n![Foto: níquel](https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Nickel_chunk.jpg/330px-Nickel_chunk.jpg)\n\n*Foto: Materialscientist at English Wikipedia · CC BY-SA 3.0*"
+    ],
+    [
+      "![Cu](/biblioteca/img/elementos/cu.svg)",
+      "Cobre · número atômico 29\n![Foto: cobre](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/NatCopper.jpg/330px-NatCopper.jpg)\n\n*Foto: Jonathan Zander (Digon3) e Materialscientist · CC BY-SA 2.5*"
+    ],
+    [
+      "![Zn](/biblioteca/img/elementos/zn.svg)",
+      "Zinco · número atômico 30\n![Foto: zinco](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Zinc_%2830_Zn%29.jpg/330px-Zinc_%2830_Zn%29.jpg)\n\n*Foto: Hi-Res Images of Chemical Elements · CC BY 3.0*"
+    ],
+    [
+      "![Br](/biblioteca/img/elementos/br.svg)",
+      "Bromo · número atômico 35\n![Foto: bromo](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Bromine-ampoule.jpg/330px-Bromine-ampoule.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![Kr](/biblioteca/img/elementos/kr.svg)",
+      "Criptônio · número atômico 36\n![Foto: criptônio](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Krypton-glow.jpg/330px-Krypton-glow.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![Ag](/biblioteca/img/elementos/ag.svg)",
+      "Prata · número atômico 47\n![Foto: prata](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Silver-nugget.jpg/330px-Silver-nugget.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![Sn](/biblioteca/img/elementos/sn.svg)",
+      "Estanho · número atômico 50\n![Foto: estanho](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Tin-2.jpg/330px-Tin-2.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![I](/biblioteca/img/elementos/i.svg)",
+      "Iodo · número atômico 53\n![Foto: iodo](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Iodine-sample.jpg/330px-Iodine-sample.jpg)\n\n*Foto: Benjah-bmm27 · domínio público*"
+    ],
+    [
+      "![Xe](/biblioteca/img/elementos/xe.svg)",
+      "Xenônio · número atômico 54\n![Foto: xenônio](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Xenon-glow.jpg/330px-Xenon-glow.jpg)\n\n*Foto: Jurii · CC BY 3.0*"
+    ],
+    [
+      "![Pt](/biblioteca/img/elementos/pt.svg)",
+      "Platina · número atômico 78\n![Foto: platina](https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Platinum_crystals.jpg/330px-Platinum_crystals.jpg)\n\n*Foto: Periodictableru · CC BY 3.0*"
+    ],
+    [
+      "![Au](/biblioteca/img/elementos/au.svg)",
+      "Ouro · número atômico 79\n![Foto: ouro](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Gold_%2879_Au%29.jpg/330px-Gold_%2879_Au%29.jpg)\n\n*Foto: Hi-Res Images of Chemical Elements · CC BY 3.0*"
+    ],
+    [
+      "![Hg](/biblioteca/img/elementos/hg.svg)",
+      "Mercúrio · número atômico 80\n![Foto: mercúrio](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Hydrargyrum_%2880_Hg%29.jpg/330px-Hydrargyrum_%2880_Hg%29.jpg)\n\n*Foto: Hi-Res Images of Chemical Elements · CC BY 3.0*"
+    ],
+    [
+      "![Pb](/biblioteca/img/elementos/pb.svg)",
+      "Chumbo · número atômico 82\n![Foto: chumbo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Lead-2.jpg/330px-Lead-2.jpg)\n\n*Foto: Chemical Elements · CC BY 3.0*"
+    ],
+    [
+      "![Rn](/biblioteca/img/elementos/rn.svg)",
+      "Radônio · número atômico 86\n![Foto: radônio](https://images-of-elements.com/radon.jpg)\n\n*Imagem ilustrativa: o radônio é radioativo demais para ser fotografado assim.*\n*Foto: Images of Elements · CC BY 3.0*"
+    ],
+    [
+      "![U](/biblioteca/img/elementos/u.svg)",
+      "Urânio · número atômico 92\n![Foto: urânio](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Ames_Process_uranium_biscuit.jpg/330px-Ames_Process_uranium_biscuit.jpg)\n\n*Foto: autor desconhecido · domínio público*"
+    ]
+  ],
+  "cover": "/biblioteca/img/capas/ciencias.svg"
+}

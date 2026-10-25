@@ -1,12 +1,9 @@
+/** Marca do Pocards: duas fichas sobrepostas, em traço fino. Segue o tema (claro/escuro). */
 export default function Logo({ className }: { className?: string }) {
   return (
-    <svg viewBox="0 0 64 64" className={className} aria-hidden="true">
-      <rect width="64" height="64" rx="14" fill="#1f2430" />
-      <rect x="17" y="13" width="34" height="26" rx="4" fill="#b9cde6" transform="rotate(-8 34 26)" />
-      <rect x="13" y="22" width="38" height="28" rx="4" fill="#fffdf8" />
-      <rect x="13" y="29" width="38" height="2.5" fill="#d6453d" />
-      <rect x="18" y="37" width="22" height="2" rx="1" fill="#b9cde6" />
-      <rect x="18" y="43" width="16" height="2" rx="1" fill="#b9cde6" />
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <rect x="5" y="3" width="15" height="11" rx="2.5" fill="none" stroke="var(--color-muted)" strokeWidth="1.5" />
+      <rect x="3" y="8" width="16" height="12" rx="2.5" fill="var(--color-bg)" stroke="var(--color-fg)" strokeWidth="1.5" />
     </svg>
   )
 }

@@ -1,0 +1,305 @@
+{
+  "id": "ingles-vocabulario-essencial",
+  "name": "Inglês — vocabulário essencial",
+  "category": "Idiomas",
+  "description": "Palavras do dia a dia, conectivos e os falsos cognatos que mais confundem.",
+  "cards": [
+    [
+      "time",
+      "tempo; vez"
+    ],
+    [
+      "people",
+      "pessoas"
+    ],
+    [
+      "year",
+      "ano"
+    ],
+    [
+      "day",
+      "dia"
+    ],
+    [
+      "week",
+      "semana"
+    ],
+    [
+      "way",
+      "caminho; maneira, jeito"
+    ],
+    [
+      "thing",
+      "coisa"
+    ],
+    [
+      "world",
+      "mundo"
+    ],
+    [
+      "life",
+      "vida"
+    ],
+    [
+      "child",
+      "criança (plural: children)"
+    ],
+    [
+      "hand",
+      "mão"
+    ],
+    [
+      "place",
+      "lugar"
+    ],
+    [
+      "work",
+      "trabalho; trabalhar"
+    ],
+    [
+      "house",
+      "casa"
+    ],
+    [
+      "city",
+      "cidade"
+    ],
+    [
+      "country",
+      "país; campo (interior)"
+    ],
+    [
+      "family",
+      "família"
+    ],
+    [
+      "friend",
+      "amigo, amiga"
+    ],
+    [
+      "water",
+      "água"
+    ],
+    [
+      "food",
+      "comida"
+    ],
+    [
+      "money",
+      "dinheiro"
+    ],
+    [
+      "question",
+      "pergunta"
+    ],
+    [
+      "answer",
+      "resposta; responder"
+    ],
+    [
+      "story",
+      "história (narrativa)"
+    ],
+    [
+      "morning",
+      "manhã"
+    ],
+    [
+      "afternoon",
+      "tarde"
+    ],
+    [
+      "night",
+      "noite"
+    ],
+    [
+      "always",
+      "sempre"
+    ],
+    [
+      "never",
+      "nunca"
+    ],
+    [
+      "sometimes",
+      "às vezes"
+    ],
+    [
+      "often",
+      "frequentemente, muitas vezes"
+    ],
+    [
+      "already",
+      "já"
+    ],
+    [
+      "still",
+      "ainda"
+    ],
+    [
+      "yet",
+      "ainda (em frases negativas e perguntas)"
+    ],
+    [
+      "again",
+      "de novo, novamente"
+    ],
+    [
+      "almost",
+      "quase"
+    ],
+    [
+      "enough",
+      "suficiente, bastante"
+    ],
+    [
+      "maybe",
+      "talvez"
+    ],
+    [
+      "together",
+      "juntos"
+    ],
+    [
+      "because",
+      "porque"
+    ],
+    [
+      "although",
+      "embora"
+    ],
+    [
+      "however",
+      "no entanto, porém"
+    ],
+    [
+      "while",
+      "enquanto"
+    ],
+    [
+      "until",
+      "até (que)"
+    ],
+    [
+      "before",
+      "antes (de)"
+    ],
+    [
+      "after",
+      "depois (de)"
+    ],
+    [
+      "during",
+      "durante"
+    ],
+    [
+      "between",
+      "entre (dois)"
+    ],
+    [
+      "through",
+      "através de, por"
+    ],
+    [
+      "without",
+      "sem"
+    ],
+    [
+      "against",
+      "contra"
+    ],
+    [
+      "around",
+      "ao redor de; por volta de"
+    ],
+    [
+      "important",
+      "importante"
+    ],
+    [
+      "different",
+      "diferente"
+    ],
+    [
+      "easy",
+      "fácil"
+    ],
+    [
+      "hard",
+      "difícil; duro"
+    ],
+    [
+      "cheap",
+      "barato"
+    ],
+    [
+      "expensive",
+      "caro"
+    ],
+    [
+      "early",
+      "cedo"
+    ],
+    [
+      "late",
+      "tarde; atrasado"
+    ],
+    [
+      "tired",
+      "cansado"
+    ],
+    [
+      "hungry",
+      "com fome"
+    ],
+    [
+      "busy",
+      "ocupado"
+    ],
+    [
+      "ready",
+      "pronto"
+    ],
+    [
+      "actually",
+      "na verdade\n(falso cognato: \"atualmente\" é currently)"
+    ],
+    [
+      "pretend",
+      "fingir\n(falso cognato: \"pretender\" é intend)"
+    ],
+    [
+      "push",
+      "empurrar\n(falso cognato: \"puxar\" é pull)"
+    ],
+    [
+      "library",
+      "biblioteca\n(falso cognato: \"livraria\" é bookstore)"
+    ],
+    [
+      "parents",
+      "pais (pai e mãe)\n(falso cognato: \"parentes\" é relatives)"
+    ],
+    [
+      "realize",
+      "perceber, se dar conta\n(falso cognato: \"realizar\" é accomplish)"
+    ],
+    [
+      "college",
+      "faculdade\n(falso cognato: \"colégio\" é high school)"
+    ],
+    [
+      "exquisite",
+      "requintado, refinado\n(falso cognato: não quer dizer \"esquisito\")"
+    ],
+    [
+      "sensible",
+      "sensato\n(falso cognato: \"sensível\" é sensitive)"
+    ],
+    [
+      "lunch",
+      "almoço\n(falso cognato: \"lanche\" é snack)"
+    ]
+  ],
+  "cover": "/biblioteca/img/bandeiras/us.svg"
+}

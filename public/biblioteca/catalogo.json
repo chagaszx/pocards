@@ -1,0 +1,58 @@
+[
+  {
+    "id": "tabela-periodica",
+    "name": "Tabela periódica — símbolos",
+    "category": "Ciências",
+    "description": "Os elementos mais cobrados: do quadrinho da tabela periódica para o nome e a foto do material.",
+    "count": 40,
+    "cover": "/biblioteca/img/capas/ciencias.svg"
+  },
+  {
+    "id": "capitais-do-mundo",
+    "name": "Capitais do mundo",
+    "category": "Geografia",
+    "description": "Capitais e bandeiras de países das Américas, Europa, África, Ásia e Oceania.",
+    "count": 55,
+    "cover": "/biblioteca/img/bandeiras/un.webp"
+  },
+  {
+    "id": "capitais-estados-brasil",
+    "name": "Capitais dos estados brasileiros",
+    "category": "Geografia",
+    "description": "Os 26 estados e o Distrito Federal, com bandeira, mapa e capital.",
+    "count": 27,
+    "cover": "/biblioteca/img/bandeiras/br.svg"
+  },
+  {
+    "id": "historia-brasil-datas",
+    "name": "História do Brasil — datas",
+    "category": "História",
+    "description": "Os marcos da história do Brasil que mais caem no ENEM e nos vestibulares.",
+    "count": 27,
+    "cover": "/biblioteca/img/bandeiras/br.svg"
+  },
+  {
+    "id": "espanhol-basico",
+    "name": "Espanhol — vocabulário básico",
+    "category": "Idiomas",
+    "description": "Cumprimentos, palavras do dia a dia, dias da semana e falsos amigos.",
+    "count": 50,
+    "cover": "/biblioteca/img/bandeiras/es.webp"
+  },
+  {
+    "id": "ingles-verbos-irregulares",
+    "name": "Inglês — verbos irregulares",
+    "category": "Idiomas",
+    "description": "Os verbos irregulares mais usados, com passado, particípio e tradução.",
+    "count": 67,
+    "cover": "/biblioteca/img/bandeiras/us.svg"
+  },
+  {
+    "id": "ingles-vocabulario-essencial",
+    "name": "Inglês — vocabulário essencial",
+    "category": "Idiomas",
+    "description": "Palavras do dia a dia, conectivos e os falsos cognatos que mais confundem.",
+    "count": 74,
+    "cover": "/biblioteca/img/bandeiras/us.svg"
+  }
+]

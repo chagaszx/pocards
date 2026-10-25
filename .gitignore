@@ -4,3 +4,7 @@ dev-dist
 *.local
 .DS_Store
 .vercel
+# Segredos nunca vão para o GitHub
+.env
+.env.*
+!.env.example

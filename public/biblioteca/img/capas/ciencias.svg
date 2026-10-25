@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480">
+  <rect width="640" height="480" fill="#0f766e"/>
+  <!-- líquido -->
+  <path d="M232 300 L408 300 L452 384 Q460 404 438 404 L202 404 Q180 404 188 384 Z" fill="#fde047"/>
+  <!-- frasco -->
+  <path d="M282 84 L282 196 L188 384 Q176 412 206 412 L434 412 Q464 412 452 384 L358 196 L358 84"
+        fill="none" stroke="#ffffff" stroke-width="18" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="262" y1="84" x2="378" y2="84" stroke="#ffffff" stroke-width="18" stroke-linecap="round"/>
+  <!-- bolhas -->
+  <circle cx="300" cy="352" r="14" fill="#0f766e"/>
+  <circle cx="350" cy="372" r="9" fill="#0f766e"/>
+  <circle cx="338" cy="236" r="12" fill="none" stroke="#ffffff" stroke-width="7"/>
+  <circle cx="306" cy="160" r="9" fill="none" stroke="#ffffff" stroke-width="6"/>
+</svg>

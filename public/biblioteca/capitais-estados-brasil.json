@@ -1,0 +1,117 @@
+{
+  "id": "capitais-estados-brasil",
+  "name": "Capitais dos estados brasileiros",
+  "category": "Geografia",
+  "description": "Os 26 estados e o Distrito Federal, com bandeira, mapa e capital.",
+  "cards": [
+    [
+      "Acre (AC)\n![Bandeira: Acre](/biblioteca/img/estados/ac-bandeira.svg)",
+      "Rio Branco\n![Mapa: Acre no Brasil](/biblioteca/img/estados/ac-mapa.webp)"
+    ],
+    [
+      "Alagoas (AL)\n![Bandeira: Alagoas](/biblioteca/img/estados/al-bandeira.svg)",
+      "Maceió\n![Mapa: Alagoas no Brasil](/biblioteca/img/estados/al-mapa.webp)"
+    ],
+    [
+      "Amapá (AP)\n![Bandeira: Amapá](/biblioteca/img/estados/ap-bandeira.svg)",
+      "Macapá\n![Mapa: Amapá no Brasil](/biblioteca/img/estados/ap-mapa.webp)"
+    ],
+    [
+      "Amazonas (AM)\n![Bandeira: Amazonas](/biblioteca/img/estados/am-bandeira.svg)",
+      "Manaus\n![Mapa: Amazonas no Brasil](/biblioteca/img/estados/am-mapa.webp)"
+    ],
+    [
+      "Bahia (BA)\n![Bandeira: Bahia](/biblioteca/img/estados/ba-bandeira.svg)",
+      "Salvador\n![Mapa: Bahia no Brasil](/biblioteca/img/estados/ba-mapa.webp)"
+    ],
+    [
+      "Ceará (CE)\n![Bandeira: Ceará](/biblioteca/img/estados/ce-bandeira.svg)",
+      "Fortaleza\n![Mapa: Ceará no Brasil](/biblioteca/img/estados/ce-mapa.webp)"
+    ],
+    [
+      "Distrito Federal (DF)\n![Bandeira: Distrito Federal](/biblioteca/img/estados/df-bandeira.svg)",
+      "Brasília (capital federal)\n![Mapa: Distrito Federal no Brasil](/biblioteca/img/estados/df-mapa.webp)"
+    ],
+    [
+      "Espírito Santo (ES)\n![Bandeira: Espírito Santo](/biblioteca/img/estados/es-bandeira.svg)",
+      "Vitória\n![Mapa: Espírito Santo no Brasil](/biblioteca/img/estados/es-mapa.webp)"
+    ],
+    [
+      "Goiás (GO)\n![Bandeira: Goiás](/biblioteca/img/estados/go-bandeira.svg)",
+      "Goiânia\n![Mapa: Goiás no Brasil](/biblioteca/img/estados/go-mapa.webp)"
+    ],
+    [
+      "Maranhão (MA)\n![Bandeira: Maranhão](/biblioteca/img/estados/ma-bandeira.svg)",
+      "São Luís\n![Mapa: Maranhão no Brasil](/biblioteca/img/estados/ma-mapa.webp)"
+    ],
+    [
+      "Mato Grosso (MT)\n![Bandeira: Mato Grosso](/biblioteca/img/estados/mt-bandeira.svg)",
+      "Cuiabá\n![Mapa: Mato Grosso no Brasil](/biblioteca/img/estados/mt-mapa.webp)"
+    ],
+    [
+      "Mato Grosso do Sul (MS)\n![Bandeira: Mato Grosso do Sul](/biblioteca/img/estados/ms-bandeira.svg)",
+      "Campo Grande\n![Mapa: Mato Grosso do Sul no Brasil](/biblioteca/img/estados/ms-mapa.webp)"
+    ],
+    [
+      "Minas Gerais (MG)\n![Bandeira: Minas Gerais](/biblioteca/img/estados/mg-bandeira.svg)",
+      "Belo Horizonte\n![Mapa: Minas Gerais no Brasil](/biblioteca/img/estados/mg-mapa.webp)"
+    ],
+    [
+      "Pará (PA)\n![Bandeira: Pará](/biblioteca/img/estados/pa-bandeira.svg)",
+      "Belém\n![Mapa: Pará no Brasil](/biblioteca/img/estados/pa-mapa.webp)"
+    ],
+    [
+      "Paraíba (PB)\n![Bandeira: Paraíba](/biblioteca/img/estados/pb-bandeira.svg)",
+      "João Pessoa\n![Mapa: Paraíba no Brasil](/biblioteca/img/estados/pb-mapa.webp)"
+    ],
+    [
+      "Paraná (PR)\n![Bandeira: Paraná](/biblioteca/img/estados/pr-bandeira.svg)",
+      "Curitiba\n![Mapa: Paraná no Brasil](/biblioteca/img/estados/pr-mapa.webp)"
+    ],
+    [
+      "Pernambuco (PE)\n![Bandeira: Pernambuco](/biblioteca/img/estados/pe-bandeira.svg)",
+      "Recife\n![Mapa: Pernambuco no Brasil](/biblioteca/img/estados/pe-mapa.webp)"
+    ],
+    [
+      "Piauí (PI)\n![Bandeira: Piauí](/biblioteca/img/estados/pi-bandeira.svg)",
+      "Teresina\n![Mapa: Piauí no Brasil](/biblioteca/img/estados/pi-mapa.webp)"
+    ],
+    [
+      "Rio de Janeiro (RJ)\n![Bandeira: Rio de Janeiro](/biblioteca/img/estados/rj-bandeira.svg)",
+      "Rio de Janeiro\n![Mapa: Rio de Janeiro no Brasil](/biblioteca/img/estados/rj-mapa.webp)"
+    ],
+    [
+      "Rio Grande do Norte (RN)\n![Bandeira: Rio Grande do Norte](/biblioteca/img/estados/rn-bandeira.svg)",
+      "Natal\n![Mapa: Rio Grande do Norte no Brasil](/biblioteca/img/estados/rn-mapa.webp)"
+    ],
+    [
+      "Rio Grande do Sul (RS)\n![Bandeira: Rio Grande do Sul](/biblioteca/img/estados/rs-bandeira.svg)",
+      "Porto Alegre\n![Mapa: Rio Grande do Sul no Brasil](/biblioteca/img/estados/rs-mapa.webp)"
+    ],
+    [
+      "Rondônia (RO)\n![Bandeira: Rondônia](/biblioteca/img/estados/ro-bandeira.svg)",
+      "Porto Velho\n![Mapa: Rondônia no Brasil](/biblioteca/img/estados/ro-mapa.webp)"
+    ],
+    [
+      "Roraima (RR)\n![Bandeira: Roraima](/biblioteca/img/estados/rr-bandeira.svg)",
+      "Boa Vista\n![Mapa: Roraima no Brasil](/biblioteca/img/estados/rr-mapa.webp)"
+    ],
+    [
+      "Santa Catarina (SC)\n![Bandeira: Santa Catarina](/biblioteca/img/estados/sc-bandeira.svg)",
+      "Florianópolis\n![Mapa: Santa Catarina no Brasil](/biblioteca/img/estados/sc-mapa.webp)"
+    ],
+    [
+      "São Paulo (SP)\n![Bandeira: São Paulo](/biblioteca/img/estados/sp-bandeira.svg)",
+      "São Paulo\n![Mapa: São Paulo no Brasil](/biblioteca/img/estados/sp-mapa.webp)"
+    ],
+    [
+      "Sergipe (SE)\n![Bandeira: Sergipe](/biblioteca/img/estados/se-bandeira.svg)",
+      "Aracaju\n![Mapa: Sergipe no Brasil](/biblioteca/img/estados/se-mapa.webp)"
+    ],
+    [
+      "Tocantins (TO)\n![Bandeira: Tocantins](/biblioteca/img/estados/to-bandeira.svg)",
+      "Palmas\n![Mapa: Tocantins no Brasil](/biblioteca/img/estados/to-mapa.webp)"
+    ]
+  ],
+  "cover": "/biblioteca/img/bandeiras/br.svg"
+}

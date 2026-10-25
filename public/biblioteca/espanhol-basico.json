@@ -1,0 +1,209 @@
+{
+  "id": "espanhol-basico",
+  "name": "Espanhol — vocabulário básico",
+  "category": "Idiomas",
+  "description": "Cumprimentos, palavras do dia a dia, dias da semana e falsos amigos.",
+  "cards": [
+    [
+      "hola",
+      "olá"
+    ],
+    [
+      "adiós",
+      "tchau, adeus"
+    ],
+    [
+      "gracias",
+      "obrigado, obrigada"
+    ],
+    [
+      "por favor",
+      "por favor"
+    ],
+    [
+      "perdón",
+      "desculpe, perdão"
+    ],
+    [
+      "buenos días",
+      "bom dia"
+    ],
+    [
+      "buenas noches",
+      "boa noite"
+    ],
+    [
+      "¿Cómo estás?",
+      "Como você está?"
+    ],
+    [
+      "¿Cuánto cuesta?",
+      "Quanto custa?"
+    ],
+    [
+      "¿Dónde está…?",
+      "Onde fica…?"
+    ],
+    [
+      "sí",
+      "sim"
+    ],
+    [
+      "agua",
+      "água"
+    ],
+    [
+      "casa",
+      "casa"
+    ],
+    [
+      "perro",
+      "cachorro"
+    ],
+    [
+      "hombre",
+      "homem"
+    ],
+    [
+      "mujer",
+      "mulher"
+    ],
+    [
+      "niño",
+      "menino, criança"
+    ],
+    [
+      "trabajo",
+      "trabalho"
+    ],
+    [
+      "dinero",
+      "dinheiro"
+    ],
+    [
+      "ciudad",
+      "cidade"
+    ],
+    [
+      "calle",
+      "rua"
+    ],
+    [
+      "hoy",
+      "hoje"
+    ],
+    [
+      "mañana",
+      "amanhã; manhã (la mañana)"
+    ],
+    [
+      "ayer",
+      "ontem"
+    ],
+    [
+      "siempre",
+      "sempre"
+    ],
+    [
+      "mucho",
+      "muito"
+    ],
+    [
+      "poco",
+      "pouco"
+    ],
+    [
+      "pequeño",
+      "pequeno"
+    ],
+    [
+      "bueno",
+      "bom"
+    ],
+    [
+      "malo",
+      "ruim, mau"
+    ],
+    [
+      "rojo",
+      "vermelho"
+    ],
+    [
+      "blanco",
+      "branco"
+    ],
+    [
+      "negro",
+      "preto"
+    ],
+    [
+      "lunes",
+      "segunda-feira"
+    ],
+    [
+      "martes",
+      "terça-feira"
+    ],
+    [
+      "miércoles",
+      "quarta-feira"
+    ],
+    [
+      "jueves",
+      "quinta-feira"
+    ],
+    [
+      "viernes",
+      "sexta-feira"
+    ],
+    [
+      "sábado",
+      "sábado"
+    ],
+    [
+      "domingo",
+      "domingo"
+    ],
+    [
+      "embarazada",
+      "grávida\n(falso amigo: \"embaraçada\" é avergonzada)"
+    ],
+    [
+      "exquisito",
+      "delicioso, saboroso\n(falso amigo: não é \"esquisito\")"
+    ],
+    [
+      "oficina",
+      "escritório\n(falso amigo: \"oficina mecânica\" é taller)"
+    ],
+    [
+      "polvo",
+      "pó, poeira\n(falso amigo: \"polvo\" o animal é pulpo)"
+    ],
+    [
+      "rato",
+      "momento, instante\n(falso amigo: o animal é ratón)"
+    ],
+    [
+      "borrar",
+      "apagar\n(falso amigo)"
+    ],
+    [
+      "cena",
+      "jantar\n(falso amigo: \"cena\" de filme é escena)"
+    ],
+    [
+      "taza",
+      "xícara\n(falso amigo: \"taça\" é copa)"
+    ],
+    [
+      "largo",
+      "comprido, longo\n(falso amigo: \"largo\" é ancho)"
+    ],
+    [
+      "pelado",
+      "careca, de cabelo raspado\n(falso amigo: \"pelado\" é desnudo)"
+    ]
+  ],
+  "cover": "/biblioteca/img/bandeiras/es.webp"
+}

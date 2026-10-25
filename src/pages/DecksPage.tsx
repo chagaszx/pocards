@@ -1,122 +1,90 @@
 import { useRef, useState, type FormEvent } from 'react'
 import { Link } from 'react-router'
+import DeckRow, { statsByDeck } from '../components/DeckRow'
+import LibraryTabs from '../components/LibraryTabs'
 import { createDeck, db } from '../db/db'
-import { exportBackup, importBackup } from '../lib/backup'
+import { useT } from '../i18n'
+import { playSound } from '../lib/sound'
 import { useLive } from '../lib/useLive'
+import { useNow } from '../lib/useNow'
 
+/** Biblioteca › Meus baralhos: todos os baralhos e a criação de novos. */
 export default function DecksPage() {
+  const t = useT()
   const decks = useLive(() => db.decks.orderBy('createdAt').toArray(), [])
   const cards = useLive(() => db.cards.toArray(), [])
   const [name, setName] = useState('')
-  const fileInput = useRef<HTMLInputElement>(null)
+  const now = useNow()
+  // Evita criar o baralho duas vezes com um clique duplo
+  const busy = useRef(false)
 
-  const now = Date.now()
-  const stats = new Map<string, { total: number; due: number }>()
-  for (const card of cards ?? []) {
-    const s = stats.get(card.deckId) ?? { total: 0, due: 0 }
-    s.total += 1
-    if (card.due <= now) s.due += 1
-    stats.set(card.deckId, s)
-  }
-  const dueToday = [...stats.values()].reduce((sum, s) => sum + s.due, 0)
+  if (!decks || !cards) return <p className="text-muted">{t.common.loading}</p>
+
+  const stats = statsByDeck(cards, now)
 
   async function handleCreate(event: FormEvent) {
     event.preventDefault()
-    if (!name.trim()) return
-    await createDeck(name)
-    setName('')
-  }
-
-  async function handleImport(file: File | undefined) {
-    if (!file) return
+    if (!name.trim() || busy.current) return
+    busy.current = true
     try {
-      const result = await importBackup(await file.text())
-      alert(`Backup importado: ${result.decks} baralhos e ${result.cards} cards.`)
-    } catch (err) {
-      alert(err instanceof Error ? err.message : 'Não foi possível importar o arquivo.')
+      await createDeck(name)
+      playSound('add')
+      setName('')
     } finally {
-      if (fileInput.current) fileInput.current.value = ''
+      busy.current = false
     }
   }
 
-  if (!decks || !cards) return <p className="text-muted">Carregando…</p>
-
   return (
-    <div className="space-y-6">
-      <section>
-        <p className="text-sm uppercase tracking-wider text-muted">Hoje</p>
-        <h1 className="font-display text-3xl font-semibold">
-          {dueToday === 0
-            ? 'Nada para revisar agora'
-            : `${dueToday} ${dueToday === 1 ? 'card para revisar' : 'cards para revisar'}`}
-        </h1>
+    <div className="flex flex-col gap-6">
+      <section className="flex items-end justify-between gap-3">
+        <div className="space-y-1">
+          <h1 className="text-[26px] font-semibold tracking-tight">{t.library.title}</h1>
+          <p className="text-[13px] text-muted">
+            {t.common.nDecks(decks.length)} · {t.common.nCards(cards.length)}
+          </p>
+        </div>
+        <Link to="/importar" className="btn btn-ghost shrink-0">
+          {t.library.import}
+        </Link>
       </section>
+
+      <LibraryTabs />
 
       <form onSubmit={handleCreate} className="flex gap-2">
         <input
           className="field"
-          placeholder="Nome do novo baralho"
+          placeholder={t.library.newDeckPlaceholder}
           value={name}
           onChange={(e) => setName(e.target.value)}
-          aria-label="Nome do novo baralho"
+          aria-label={t.library.newDeckLabel}
         />
         <button className="btn btn-primary shrink-0" disabled={!name.trim()}>
-          Criar
+          {t.common.create}
         </button>
       </form>
 
-      {decks.length === 0 ? (
-        <div className="index-card rounded-2xl px-5 pb-6 pt-4">
-          <p className="font-display text-lg font-semibold">Comece criando um baralho</p>
-          <p className="mt-6 leading-8 text-muted">
-            Um baralho junta cards de um mesmo assunto, como “Inglês — verbos” ou “Anatomia”.
+      <section>
+        <p className="label mb-2">{t.library.allDecks}</p>
+        {decks.length === 0 ? (
+          <p className="border-t border-line pt-4 leading-relaxed text-muted">
+            {t.library.emptyStart}{' '}
+            <Link to="/biblioteca/explorar" className="text-fg underline underline-offset-4">
+              {t.library.emptyReady}
+            </Link>
+            {t.library.emptyCreate}{' '}
+            <Link to="/importar" className="text-fg underline underline-offset-4">
+              {t.library.emptyImport}
+            </Link>
+            .
           </p>
-        </div>
-      ) : (
-        <ul className="space-y-3">
-          {decks.map((deck) => {
-            const s = stats.get(deck.id) ?? { total: 0, due: 0 }
-            return (
-              <li
-                key={deck.id}
-                className="flex items-center gap-3 rounded-2xl border border-line bg-card p-4"
-              >
-                <Link to={`/baralho/${deck.id}`} className="min-w-0 flex-1">
-                  <p className="truncate font-semibold">{deck.name}</p>
-                  <p className="text-sm text-muted">
-                    {s.total} {s.total === 1 ? 'card' : 'cards'}
-                    {s.due > 0 && <span className="text-accent-ink"> · {s.due} para hoje</span>}
-                  </p>
-                </Link>
-                {s.due > 0 ? (
-                  <Link to={`/estudar/${deck.id}`} className="btn btn-primary">
-                    Estudar
-                  </Link>
-                ) : (
-                  <Link to={`/baralho/${deck.id}`} className="btn btn-ghost">
-                    Abrir
-                  </Link>
-                )}
-              </li>
-            )
-          })}
-        </ul>
-      )}
-
-      <section className="flex flex-wrap gap-2 border-t border-line pt-5 text-sm">
-        <button className="btn btn-ghost" onClick={() => exportBackup()}>
-          Exportar backup
-        </button>
-        <button className="btn btn-ghost" onClick={() => fileInput.current?.click()}>
-          Importar backup
-        </button>
-        <input
-          ref={fileInput}
-          type="file"
-          accept="application/json,.json"
-          className="hidden"
-          onChange={(e) => handleImport(e.target.files?.[0])}
-        />
+        ) : (
+          <ul className="border-t border-line">
+            {decks.map((deck) => (
+              <DeckRow key={deck.id} deck={deck} stats={stats.get(deck.id) ?? { total: 0, due: 0 }} />
+            ))}
+          </ul>
+        )}
       </section>
     </div>
   )

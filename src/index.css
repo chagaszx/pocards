@@ -1,95 +1,183 @@
 @import "tailwindcss";
 
-/* Identidade do Pocards: papel creme, tinta escura e a linha vermelha das fichas pautadas. */
+/* Pocards — tema escuro e minimalista.
+   Fundo quase preto (não preto puro, que cansa mais), superfícies grafite
+   e texto cinza claro. O único destaque é o botão principal, claro sobre escuro. */
 @theme {
-  --color-paper: #f6f1e7;
-  --color-card: #fffdf8;
-  --color-ink: #1f2430;
-  --color-muted: #5f6370;
-  --color-line: #e4dccb;
-  --color-accent: #d6453d;
-  --color-accent-ink: #b3362f; /* versão mais escura do vermelho, legível em texto */
-  --color-rule: #b9cde6;
+  --color-bg: #0f0f11;
+  --color-surface: #18181b;
+  --color-surface-2: #1f1f23;
+  --color-line: #26262b;
+  --color-border: #2a2a2f;
+  --color-border-strong: #52525b;
+  --color-fg: #ececee;
+  --color-fg-soft: #d4d4d8;
+  --color-muted: #a1a1aa;
 
-  /* Cores dos botões de avaliação (contraste ≥ 4,5:1 com texto branco) */
-  --color-again: #c8423a;
-  --color-hard: #94600c;
-  --color-good: #2f7a50;
-  --color-easy: #3866a8;
+  /* Pontinhos de cor dos botões de avaliação */
+  --color-again: #e5807a;
+  --color-hard: #d9b26a;
+  --color-good: #7cc39a;
+  --color-easy: #82a8e0;
 
-  --font-display: ui-serif, Georgia, "Times New Roman", serif;
-  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+/* Tema claro: mesmos nomes de cor, valores trocados.
+   O atributo data-theme é definido em index.html e em src/lib/settings.ts. */
+:root[data-theme='light'] {
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-surface-2: #f4f4f5;
+  --color-line: #e4e4e7;
+  --color-border: #e4e4e7;
+  --color-border-strong: #a1a1aa;
+  --color-fg: #18181b;
+  --color-fg-soft: #3f3f46;
+  --color-muted: #6b6b74;
+
+  --color-again: #c62828;
+  --color-hard: #b45309;
+  --color-good: #15803d;
+  --color-easy: #1d4ed8;
+
+  color-scheme: light;
 }
 
 html,
 body {
-  background-color: var(--color-paper);
-  color: var(--color-ink);
+  background-color: var(--color-bg);
+  color: var(--color-fg);
   font-family: var(--font-sans);
+  color-scheme: dark;
   -webkit-font-smoothing: antialiased;
+}
+
+:root[data-theme='light'] body {
+  color-scheme: light;
+}
+
+::selection {
+  background: var(--color-border-strong);
 }
 
 /* Classes de componente ficam na camada "components" para que utilitários
    do Tailwind (ex.: px-1, gap-0) possam sobrescrevê-las. */
 @layer components {
-/* Ficha pautada: linha vermelha no topo e pauta azul clara. */
-.index-card {
-  background-color: var(--color-card);
-  background-image:
-    linear-gradient(to bottom, transparent 52px, var(--color-accent) 52px, var(--color-accent) 54px, transparent 54px),
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0,
-      transparent 31px,
-      color-mix(in srgb, var(--color-rule) 60%, transparent) 31px,
-      color-mix(in srgb, var(--color-rule) 60%, transparent) 32px
-    );
-  background-position: 0 0, 0 54px;
-  background-repeat: no-repeat, repeat;
-  border: 1px solid var(--color-line);
-  box-shadow: 0 1px 0 var(--color-line), 0 8px 24px -12px rgb(31 36 48 / 0.25);
+  .label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  .field {
+    width: 100%;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+    color: var(--color-fg);
+    border-radius: 0.625rem;
+    padding: 0.65rem 0.8rem;
+    outline: none;
+    transition: border-color 120ms ease;
+  }
+
+  .field::placeholder {
+    color: #8b8b94;
+  }
+
+  .field:focus {
+    border-color: var(--color-border-strong);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 44px;
+    border-radius: 0.625rem;
+    padding: 0 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 80ms ease, opacity 120ms ease, background-color 120ms ease;
+  }
+
+  .btn:active {
+    transform: translateY(1px);
+  }
+
+  .btn:disabled {
+    opacity: 0.35;
+  }
+
+  .btn-primary {
+    background: var(--color-fg);
+    color: var(--color-bg);
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+
+  .btn-ghost {
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-fg);
+  }
+
+  .btn-ghost:hover {
+    background: var(--color-surface-2);
+  }
 }
 
-.field {
-  width: 100%;
-  border: 1px solid var(--color-line);
-  background: var(--color-card);
-  border-radius: 0.75rem;
-  padding: 0.65rem 0.85rem;
-  outline: none;
+/* Aviso "+2 pontos para o herói" na sessão de estudo */
+@keyframes hero-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  15%,
+  70% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
 }
 
-.field:focus {
-  border-color: var(--color-ink);
+.hero-pop {
+  animation: hero-pop 1.6s ease forwards;
+  pointer-events: none;
 }
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  border-radius: 0.75rem;
-  padding: 0.6rem 1rem;
-  font-weight: 600;
-  transition: transform 80ms ease, opacity 120ms ease;
+@media (prefers-reduced-motion: reduce) {
+  .hero-pop {
+    animation-duration: 2.4s;
+  }
 }
 
-.btn:active {
-  transform: translateY(1px);
+/* Avisos do modo Herói (subiu de nível, habilidade nova…) */
+@keyframes hero-toast {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+  8%,
+  88% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
 }
 
-.btn:disabled {
-  opacity: 0.4;
-}
-
-.btn-primary {
-  background: var(--color-ink);
-  color: var(--color-card);
-}
-
-.btn-ghost {
-  border: 1px solid var(--color-line);
-  background: var(--color-card);
-  color: var(--color-ink);
-}
+.hero-toast {
+  animation: hero-toast 4.2s ease forwards;
 }

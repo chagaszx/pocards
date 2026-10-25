@@ -1,0 +1,26 @@
+Créditos das imagens dos baralhos prontos do Pocards
+=====================================================
+
+bandeiras/ — Bandeiras dos países
+  Projeto flag-icons (https://github.com/lipis/flag-icons)
+  Licença MIT — texto completo em bandeiras/LICENSE-flag-icons.txt
+  Algumas bandeiras foram convertidas para WebP para ficarem mais leves.
+
+estados/*-bandeira.svg — Bandeiras dos estados (versão simplificada, estilo ícone)
+  Projeto icones-bandeiras-br-uf, de Pierre Lapalu
+  (https://github.com/pierrelapalu/icones-bandeiras-br-uf)
+  Domínio público (CC0 1.0 Universal).
+
+estados/*-mapa.webp — Mapas de localização dos estados
+  Gerados pelo Pocards a partir do contorno dos estados do projeto brazil-map
+  (https://github.com/LuizJarduli/brazil-map)
+  Licença BSD 2-Clause — texto completo em estados/LICENSE-brazil-map.txt
+
+capas/ — Capas desenhadas pelo próprio Pocards (ex.: frasco de ciências).
+
+Fotos dos elementos (baralho "Tabela periódica")
+  Carregadas do Wikimedia Commons e de images-of-elements.com, com o autor e a
+  licença de cada foto indicados no verso do card. A maioria é da coleção
+  "Images of Elements" (https://images-of-elements.com), licença CC BY 3.0.
+  Lista de fotos e créditos obtida do projeto Periodic-Table-JSON
+  (https://github.com/Bowserinator/Periodic-Table-JSON).
