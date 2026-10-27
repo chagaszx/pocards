@@ -38,5 +38,5 @@ export const ONLINE = {
    * Pública, pode ficar no código. A chave SECRETA vai só no painel do Supabase
    * (Authentication › Bot and Abuse Protection). Vazio = sem CAPTCHA.
    */
-  captchaSiteKey: '',
+  captchaSiteKey: '0x4AAAAAAFof2Shpyk52tmub',
 }
