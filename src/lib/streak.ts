@@ -7,8 +7,10 @@ import { dayKey } from './date'
  * antes do histórico existir.
  */
 export async function getStudyDays(): Promise<Set<string>> {
-  const [reviewDays, cards] = await Promise.all([db.reviews.orderBy('day').uniqueKeys(), db.cards.toArray()])
-  const days = new Set<string>(reviewDays.map(String))
+  // Lê tudo de uma vez (getAll): o Safari do iPhone às vezes recusa abrir cursores,
+  // usados por consultas como uniqueKeys ("UnknownError: Unable to open cursor")
+  const [reviews, cards] = await Promise.all([db.reviews.toArray(), db.cards.toArray()])
+  const days = new Set<string>(reviews.map((review) => String(review.day)))
   for (const card of cards) {
     if (card.srs.last_review) days.add(dayKey(new Date(card.srs.last_review)))
   }

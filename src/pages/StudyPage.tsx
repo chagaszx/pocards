@@ -36,23 +36,31 @@ export default function StudyPage() {
   /** Aviso rápido dos pontos ganhos para o herói. */
   const [heroPop, setHeroPop] = useState<{ n: number; key: number } | null>(null)
 
+  /** Falha ao montar a fila: vira o aviso de erro da tela (com o motivo), em vez de carregar para sempre. */
+  const [loadError, setLoadError] = useState<Error | null>(null)
   // A fila é montada uma vez ao abrir a sessão.
   useEffect(() => {
     let active = true
     const now = Date.now()
+    // Lê o baralho inteiro e filtra aqui: um .filter() no banco usaria cursor,
+    // que o Safari do iPhone às vezes recusa ("Unable to open cursor")
     db.cards
       .where('deckId')
       .equals(deckId)
-      .filter((card) => card.due <= now)
-      .sortBy('due')
+      .toArray()
       .then((list) => {
-        if (active) setQueue(list)
+        if (active) setQueue(list.filter((card) => card.due <= now).sort((a, b) => a.due - b.due))
+      })
+      .catch((err) => {
+        console.error('Erro ao montar a sessão de estudo:', err)
+        if (active) setLoadError(err instanceof Error ? err : new Error(String(err)))
       })
     return () => {
       active = false
     }
   }, [deckId])
 
+  if (loadError) throw loadError
   const current = queue?.[0]
   const intervals = useMemo(() => (current ? previewIntervals(current.srs) : null), [current])
 

@@ -202,9 +202,10 @@ export async function pruneImages(): Promise<void> {
   const old = await db.images.where('createdAt').below(cutoff).primaryKeys()
   if (old.length === 0) return
   const used = new Set<string>()
-  await db.cards.each((card) => {
+  // toArray em vez de each: o Safari do iPhone às vezes recusa abrir cursores ("Unable to open cursor")
+  for (const card of await db.cards.toArray()) {
     for (const id of imageIdsIn(`${card.front}\n${card.back}`)) used.add(id)
-  })
+  }
   const unused = old.filter((id) => !used.has(String(id)))
   if (unused.length) await db.images.bulkDelete(unused.map(String))
 }
@@ -223,7 +224,8 @@ export async function renameDeck(id: string, name: string): Promise<void> {
 
 export async function deleteDeck(id: string): Promise<void> {
   await db.transaction('rw', db.decks, db.cards, async () => {
-    await db.cards.where('deckId').equals(id).delete()
+    // Busca as chaves e apaga em lote (sem cursor, que o Safari do iPhone às vezes recusa)
+    await db.cards.bulkDelete(await db.cards.where('deckId').equals(id).primaryKeys())
     await db.decks.delete(id)
   })
   void pruneImages()
