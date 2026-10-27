@@ -1,120 +1,124 @@
 # Pocards
 
-Flashcards gratuitos com repetição espaçada, direto no navegador — e uma Aventura em que o seu estudo vira energia para um guerreiro enfrentar a masmorra.
+**English** · [Português](README.pt-BR.md)
 
-**Use agora:** https://pocards.vercel.app
+Free spaced-repetition flashcards right in your browser — plus an Adventure where your study sessions become energy for a warrior to battle through a dungeon.
 
-Funciona offline, pode ser instalado no celular ou no PC como app (PWA) e guarda tudo no próprio aparelho. Disponível em português, inglês e espanhol.
+**Try it now:** https://pocards.vercel.app
 
-## O que tem no app
+Works offline, installs on your phone or computer as an app (PWA) and keeps everything on your own device. Available in English, Portuguese and Spanish.
 
-### Estudo
-- Baralhos e cards com repetição espaçada pelo algoritmo FSRS: avalie em Errei / Difícil / Bom / Fácil e veja o próximo intervalo em cada botão.
-- Editor com formatação (negrito, itálico, listas), fórmulas matemáticas (KaTeX) e imagens.
-- Atalhos no estudo: `espaço` mostra a resposta, `1` a `4` avaliam; `Ctrl + Enter` salva um card.
-- Biblioteca com baralhos prontos: capitais do mundo e dos estados do Brasil, tabela periódica, inglês (vocabulário e verbos irregulares), espanhol básico e datas da história do Brasil.
-- Importação de baralhos do Anki (`.apkg`, com imagens e formatação), CSV/TXT e Quizlet.
-- Resumo com sequência de dias, revisões e desempenho.
-- Lembrete diário, tema claro/escuro, sons e backup completo em JSON.
+## Features
 
-### Aventura
-- Cada resposta dá energia (Errei 0 · Difícil 1 · Bom 2 · Fácil 4), que também recarrega sozinha (+2 a cada 15 min, até 10). Cada fase custa 4.
-- 10 fases em 3 ambientes (Caverna dos Slimes, Cripta Sombria e Covil dos Goblins) e o chefe, o Rei Goblin.
-- O guerreiro luta sozinho, com modo automático, velocidade ×2, músicas próprias para cada ambiente e sons de batalha.
-- 6 habilidades (3 ativas, 3 passivas) e uma árvore de evolução comprada com ouro (Força, Armadura, Sabedoria, Fortuna).
-- Pódio mundial: os 3 primeiros jogadores a derrotar o chefe ganham medalhas de ouro, prata e bronze.
+### Study
+- Decks and cards scheduled by the FSRS spaced-repetition algorithm: rate each card Again / Hard / Good / Easy and see the next interval on every button.
+- Rich card editor with bold, italics, lists, math formulas (KaTeX) and images.
+- Study shortcuts: `space` reveals the answer, `1`–`4` rate it; `Ctrl + Enter` saves a card.
+- Ready-made deck library: world capitals, Brazilian state capitals, the periodic table, English vocabulary and irregular verbs, basic Spanish and key dates in Brazilian history.
+- Import from Anki (`.apkg`, including images and formatting), CSV/TXT and Quizlet.
+- Stats with day streaks, reviews and performance.
+- Daily reminder, light/dark theme, sound effects and a full JSON backup.
+
+### Adventure
+- Every answer earns energy (Again 0 · Hard 1 · Good 2 · Easy 4), which also refills over time (+2 every 15 min, up to 10). Each stage costs 4.
+- 10 stages across 3 areas (Slime Cave, Dark Crypt and Goblin Den), ending with the boss: the Goblin King.
+- The warrior fights on his own, with auto mode, 2× speed, a music theme for each area and battle sounds.
+- 6 skills (3 active, 3 passive) and an upgrade tree bought with gold (Strength, Armor, Wisdom, Fortune).
+- Worldwide podium: the first 3 players to defeat the boss earn gold, silver and bronze medals.
 
 ### Feedback
-- Tela para relatar erros e sugerir ideias, enviada direto pelo app (Web3Forms) ou por e-mail.
+- An in-app screen to report bugs and suggest ideas, sent directly (Web3Forms) or by email.
 
-## Como rodar no computador
+## Running locally
 
-Pré-requisito: [Node.js](https://nodejs.org) 20 ou mais recente.
+Requirement: [Node.js](https://nodejs.org) 20 or newer.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abra o endereço que aparecer no terminal (normalmente http://localhost:5173).
+Open the address shown in the terminal (usually http://localhost:5173).
 
-| Comando | O que faz |
+| Command | What it does |
 | --- | --- |
-| `npm run dev` | Servidor de desenvolvimento com recarga automática |
-| `npm run build` | Confere os tipos e gera a versão final em `dist/` |
-| `npm run preview` | Serve a versão final localmente (para testar o PWA/offline) |
-| `npm run catalogo` | Gera de novo o catálogo dos baralhos prontos |
+| `npm run dev` | Development server with hot reload |
+| `npm run build` | Type-checks and builds the production version into `dist/` |
+| `npm run preview` | Serves the production build locally (to test the PWA/offline mode) |
+| `npm run catalogo` | Rebuilds the catalog of ready-made decks |
 
-Não use `npm run dev -- --host` em redes públicas: o servidor de desenvolvimento não é feito para ficar exposto.
+Don't use `npm run dev -- --host` on public networks: the development server isn't meant to be exposed.
 
-## Publicação
+## Deployment
 
-O site está na [Vercel](https://vercel.com), ligado a este repositório: **cada envio para a branch `main` publica sozinho** em cerca de 1 minuto. O arquivo `vercel.json` cuida das rotas e dos cabeçalhos de segurança (CSP, proteção contra clickjacking e outros).
+The site runs on [Vercel](https://vercel.com), connected to this repository: **every push to `main` goes live automatically** in about a minute. `vercel.json` handles routing and the security headers (Content Security Policy, clickjacking protection and more).
 
-## Serviços online (opcionais)
+## Online services (optional)
 
-O estudo funciona 100% sem servidor. Só dois recursos usam a internet, configurados em `src/config.ts`:
+Studying works 100% without a server. Only two features use the internet, configured in `src/config.ts`:
 
-- **Pódio do chefe — [Supabase](https://supabase.com) (plano grátis).** A tabela e a função das medalhas estão em `supabase/medalhas.sql`: cole no SQL Editor e rode. O app entra como jogador anônimo; no código fica só a chave **pública** (publishable). O registro da medalha é protegido por **CAPTCHA (Cloudflare Turnstile)**: a chave do site fica em `config.ts` e a chave secreta só no painel do Supabase (Authentication › Attack Protection).
-- **Feedback — [Web3Forms](https://web3forms.com).** A chave de envio é pública por natureza; o formulário tem uma armadilha contra robôs.
+- **Boss podium — [Supabase](https://supabase.com) (free plan).** The medals table and function live in `supabase/medalhas.sql`: paste it into the SQL Editor and run it. The app signs in as an anonymous player, and only the **public** (publishable) key goes in the code. Claiming a medal is protected by a **CAPTCHA (Cloudflare Turnstile)**: the site key goes in `config.ts` and the secret key only in the Supabase dashboard (Authentication › Attack Protection).
+- **Feedback — [Web3Forms](https://web3forms.com).** Its access key is public by design; the form includes a trap for bots.
 
-Nunca coloque chaves secretas (como a `service_role` do Supabase ou a secret do Turnstile) no código: tudo em `src/` vai para o navegador de quem usa o app.
+Never put secret keys (such as Supabase's `service_role` key or the Turnstile secret) in the code: everything in `src/` ships to the user's browser.
 
-Para zerar o pódio (por exemplo, depois de testes), rode no SQL Editor do Supabase:
+To reset the podium (after testing, for example), run this in the Supabase SQL Editor:
 
 ```sql
 delete from public.boss_medals;
 ```
 
-## Tecnologias
+## Tech stack
 
-React 19 + TypeScript + Vite, Tailwind CSS v4, React Router, Dexie (IndexedDB), ts-fsrs, KaTeX, JSZip + sql.js (importação do Anki), vite-plugin-pwa e Web Audio API (músicas e sons gerados na hora, sem arquivos).
+React 19 + TypeScript + Vite, Tailwind CSS v4, React Router, Dexie (IndexedDB), ts-fsrs, KaTeX, JSZip + sql.js (Anki import), vite-plugin-pwa and the Web Audio API (music and sounds generated on the fly, no audio files).
 
-## Estrutura
+## Project structure
+
+The code comments are in Portuguese; the interface is fully translated in `src/i18n/`.
 
 ```
 src/
-  main.tsx              ponto de entrada
-  App.tsx               rotas
-  config.ts             e-mail de feedback, Web3Forms, Supabase e CAPTCHA
-  index.css             tema (cores, fontes) e classes base
-  components/           layout, abas, editor com formatação, conteúdo dos cards, aviso de erro
+  main.tsx              entry point
+  App.tsx               routes
+  config.ts             feedback email, Web3Forms, Supabase and CAPTCHA
+  index.css             theme (colors, fonts) and base classes
+  components/           layout, tabs, rich text editor, card content, error screen
   pages/
-    HomePage.tsx        tela inicial (cards para hoje)
-    DecksPage.tsx       biblioteca de baralhos
-    ExplorePage.tsx     baralhos prontos
-    DeckPage.tsx        editor de cards de um baralho
-    StudyPage.tsx       sessão de estudo
-    StatsPage.tsx       resumo e sequência de dias
-    ImportPage.tsx      importar Anki, CSV/TXT e Quizlet
-    HeroPage.tsx        Aventura (batalha, evolução, habilidades, monstros e pódio)
-    SettingsPage.tsx    configurações e backup
-    FeedbackPage.tsx    enviar feedback
+    HomePage.tsx        home screen (cards due today)
+    DecksPage.tsx       deck library
+    ExplorePage.tsx     ready-made decks
+    DeckPage.tsx        card editor for a deck
+    StudyPage.tsx       study session
+    StatsPage.tsx       stats and day streak
+    ImportPage.tsx      Anki, CSV/TXT and Quizlet import
+    HeroPage.tsx        Adventure (battle, upgrades, skills, monsters and podium)
+    SettingsPage.tsx    settings and backup
+    FeedbackPage.tsx    send feedback
   game/
-    data.ts             monstros, fases, habilidades, árvore e números do jogo
-    engine.ts           motor das lutas (sorteia a fase inteira de uma vez)
-    runner.ts           fases em segundo plano, energia, recompensas, música
-    BattleScene.tsx     cena da batalha e animações
-    medal.ts            sincroniza a medalha com o pódio
-  db/                   banco local (Dexie) e tipos
+    data.ts             monsters, stages, skills, upgrade tree and game numbers
+    engine.ts           battle engine (rolls the whole stage at once)
+    runner.ts           background stages, energy, rewards and music
+    BattleScene.tsx     battle scene and animations
+    medal.ts            keeps the medal in sync with the podium
+  db/                   local database (Dexie) and types
   lib/
-    srs.ts              FSRS: agendamento e intervalos
-    import/             leitores de Anki, CSV/TXT e Quizlet
-    markdown.ts         formatação dos cards
-    backup.ts           exportar/importar JSON (com validação)
-    online.ts           Supabase (pódio) e CAPTCHA
-    music.ts, sound.ts  músicas e efeitos com Web Audio
-    settings.ts         preferências (tema, idioma, sons, lembrete)
-  i18n/                 textos em português, inglês e espanhol
+    srs.ts              FSRS scheduling and intervals
+    import/             Anki, CSV/TXT and Quizlet readers
+    markdown.ts         card formatting
+    backup.ts           JSON export/import (with validation)
+    online.ts           Supabase (podium) and CAPTCHA
+    music.ts, sound.ts  music and sound effects with Web Audio
+    settings.ts         preferences (theme, language, sounds, reminder)
+  i18n/                 Portuguese, English and Spanish texts
 public/
-  biblioteca/           baralhos prontos e suas imagens
-  theme.js              aplica o tema antes de desenhar a tela
+  biblioteca/           ready-made decks and their images
+  theme.js              applies the theme before the page renders
 scripts/
-  gerar-catalogo.mjs    monta public/biblioteca/catalogo.json
+  gerar-catalogo.mjs    builds public/biblioteca/catalogo.json
 supabase/
-  medalhas.sql          tabela, regras e função do pódio
+  medalhas.sql          podium table, rules and function
 ```
 
-## Licenças de conteúdo
+## Content licenses
 
-As bandeiras, mapas e imagens dos baralhos prontos têm seus créditos e licenças em `public/biblioteca/img/` (`CREDITOS.txt` e arquivos `LICENSE`).
+Credits and licenses for the flags, maps and images in the ready-made decks are in `public/biblioteca/img/` (`CREDITOS.txt` and the `LICENSE` files).

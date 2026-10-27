@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Pocards — flashcards gratuitos com repetição espaçada, direto no navegador.",
+  "description": "Pocards — free spaced-repetition flashcards in your browser, with an RPG adventure powered by your study sessions.",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
