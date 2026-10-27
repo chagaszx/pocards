@@ -390,6 +390,7 @@ const es: Dict = {
       `¡Medalla de ${['', 'oro', 'plata', 'bronce'][tier]}! Fuiste el ${tier}º jugador en derrotar al Rey Goblin.`,
     claimTooLate: 'Las tres medallas ya tienen dueño. ¡Igual, felicidades por la victoria!',
     claimError: 'No se pudo registrar ahora. Revisa tu conexión e inténtalo de nuevo.',
+    claimCaptchaError: 'No se pudo confirmar que eres una persona. Inténtalo de nuevo.',
     pendingNotice: '¡Derrotaste al jefe! Registra la victoria en el podio mundial.',
     pendingAction: 'Registrar',
     toastBossWin: (pending: boolean) =>

@@ -389,6 +389,7 @@ const pt = {
       `Medalha de ${['', 'ouro', 'prata', 'bronze'][tier]}! Você foi o ${tier}º jogador a derrotar o Rei Goblin.`,
     claimTooLate: 'As três medalhas já têm dono. Mesmo assim, parabéns pela vitória!',
     claimError: 'Não deu para registrar agora. Verifique a internet e tente de novo.',
+    claimCaptchaError: 'Não deu para confirmar que você é uma pessoa. Tente de novo.',
     pendingNotice: 'Você derrotou o chefe! Registre a vitória no pódio mundial.',
     pendingAction: 'Registrar',
     toastBossWin: (pending: boolean): string =>

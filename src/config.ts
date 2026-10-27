@@ -33,4 +33,10 @@ export const ONLINE = {
   supabaseUrl: 'https://nmltejkosvpvsbbanhdt.supabase.co',
   /** Chave pública: "anon public" (eyJ...) ou "publishable" (sb_publishable_...). */
   supabaseKey: 'sb_publishable_Lr91un7zFkTl8_4S_fNVyw_WrkGYPhd',
+  /**
+   * Chave do site do Cloudflare Turnstile (CAPTCHA contra robôs no pódio).
+   * Pública, pode ficar no código. A chave SECRETA vai só no painel do Supabase
+   * (Authentication › Bot and Abuse Protection). Vazio = sem CAPTCHA.
+   */
+  captchaSiteKey: '',
 }

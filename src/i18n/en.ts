@@ -389,6 +389,7 @@ const en: Dict = {
       `${['', 'Gold', 'Silver', 'Bronze'][tier]} medal! You were player #${tier} to defeat the Goblin King.`,
     claimTooLate: 'All three medals are already taken. Congratulations on the win anyway!',
     claimError: 'Could not register right now. Check your connection and try again.',
+    claimCaptchaError: "Couldn't confirm you're a person. Please try again.",
     pendingNotice: 'You defeated the boss! Register the win on the world podium.',
     pendingAction: 'Register',
     toastBossWin: (pending: boolean) =>

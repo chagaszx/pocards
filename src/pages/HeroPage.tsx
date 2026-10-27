@@ -1171,6 +1171,9 @@ function BossPodium({ state }: { state: GameState }) {
     }
   }, [online, state.medal, reload])
 
+  /** Onde a caixinha do CAPTCHA aparece, se o Turnstile pedir um clique. */
+  const captchaBox = useRef<HTMLDivElement>(null)
+
   async function claim() {
     const nickname = cleanNickname(name)
     if (nickname.length < 2 || sending) return
@@ -1178,13 +1181,13 @@ function BossPodium({ state }: { state: GameState }) {
     setMessage(null)
     unlockAudio()
     try {
-      const rank = await claimBossMedal(nickname)
+      const rank = await claimBossMedal(nickname, captchaBox.current ?? undefined)
       await saveGameState({ medal: rank, medalPending: false, medalName: nickname })
       setMessage(rank > 0 ? t.hero.claimWon(rank) : t.hero.claimTooLate)
       playSound(rank > 0 ? 'levelUp' : 'select')
       setReload((n) => n + 1)
-    } catch {
-      setMessage(t.hero.claimError)
+    } catch (err) {
+      setMessage(String((err as Error)?.message).startsWith('captcha') ? t.hero.claimCaptchaError : t.hero.claimError)
       playSound('denied')
     } finally {
       setSending(false)
@@ -1255,6 +1258,7 @@ function BossPodium({ state }: { state: GameState }) {
               </button>
             </div>
           )}
+          {online && <div ref={captchaBox} className="mt-3 empty:hidden" />}
         </div>
       )}
       {message && <p className="mt-3 text-[13px] leading-snug text-fg-soft">{message}</p>}
